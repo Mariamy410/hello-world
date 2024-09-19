@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <style>
+    /* Reset the margin and padding for the whole page */
+    html,body {font-family: "Times New Roman", Times, serif}
+h1,h2,h3,h4,h5,h6 {
+      font-family: "Times New Roman", Times, serif;
+      font-weight: 900;
+      margin-bottom: 20px;
+}
+
+
+    /* Apply the elegant Merriweather font to the whole body */
+    body {
+      font-family: 'Merriweather', serif;
+      text-align: center;
+      margin: 0;
+    }
+
+    /* Apply Dancing Script font with a heavier weight and text shadow for boldness */
+    h2, h3, h4, h5, h6 {
+      font-family: "Times New Roman", Times, serif;
+      font-weight: 700; /* Set to a heavier weight */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow for extra boldness */
+      margin-bottom: 20px;
+    }
+
+    /* Increase the size of the headings */
+    h2 {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 30px; /* Smaller font size for h2 */
+    }
+
+    h3 {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 26px; /* Smaller font size for h3 */
+    }
+
+    /* Navigation Bar Styles */
+    .topnav {
+      overflow: hidden;
+      background-color: #fe9bc2;
+      position: fixed; /* Make the nav bar fixed at the top */
+      top: 0; /* Stick to the top */
+      width: 100%; /* Full width */
+      z-index: 1000; /* Ensures the nav bar stays on top of other content */
+      left: 0; /* Ensure it sticks to the left */
+      height: 50px; /* Specify height */
+    }
+
+    .topnav a {
+      float: left;
+      color: #ffffff;
+      text-align: center;
+      padding: 18px 16px; /* Adjusted padding for better spacing */
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      background-color: rgb(255, 199, 229);
+      color: rgb(255, 255, 255);
+    }
+
+    .topnav a.active {
+      background-color: #ff3ba3;
+      color: rgb(255, 255, 255);
+    }
+
+    /* Add padding to the top of the page to prevent content from overlapping with the fixed nav bar */
+    .content {
+      padding-top: 80px; /* Increased padding to ensure space for the fixed navbar */
+    }
+
+    /* Contact Page Content */
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    /* Flexbox container for contact info */
+    .contact-info {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .contact-info div {
+      margin: 10px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      width: 250px;
+    }
+
+    .contact-info div h3 {
+      margin-bottom: 10px;
+      font-size: 1.2em;
+    }
+
+    .contact-info div p {
+      margin: 5px 0;
+      font-size: 1em;
+      word-wrap: break-word;
+    }
+
+    /* Style for the contact form */
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    input[type=text], textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #f3e5ef;
+      margin: 8px 0;
+      border-radius: 5px;
+    }
+
+    input[type=submit] {
+      background-color: #e776c1;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    input[type=submit]:hover {
+      background-color: #ff3ba3;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a class="active" href="#home">Contact</a>
+    <a href="file:///C:/Users/almas/Downloads/Mariam%20yassin.pdf">Experience</a>
+  </div>
+
+  <!-- Page content with padding to avoid overlapping with the fixed navbar -->
+  <div class="content">
+    <h2>Contact Me</h2>
+
+  <!-- Contact Info Section -->
+  <div class="contact-info">
+    <div><h3>Email</h3>
+      <p><a href="mailto:mmrm89079@gmail.com">mmrm89079@gmail.com</a></p>
+    </div>
+
+    <div>
+      <h3>Instagram</h3>
+      <p><a href="https://www.instagram.com/mariam_.yassin" target="_blank">@mariam_.yassin</a></p>
+    </div>
+
+    <div>
+      <h3>Mailing Address</h3>
+      <p>1209-120 Cherryhill Place</p>
+      <p>London, Ontario, N6H 4N9</p>
+      <p>Canada</p>
+    </div>
+  </div> 
+
+  <!-- Contact Form Section -->
+  <style>
+    body {
+      font-family: "Times New Roman", Times, serif;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Style inputs */
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+    
+    input[type=submit] {
+      background-color: #ff3ba3;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+      background-color: rgb(255, 199, 229);
+    }
+    
+    /* Style the container/contact section */
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 10px;
+    }
+    
+    /* Create two columns that float next to eachother */
+    .column {
+      float: left;
+      width: 50%;
+      margin-top: 6px;
+      padding: 20px;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
+    }
+    </style>
+    </head>
+    <body>
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact me</h2>
+    <p>Please leave a message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="c:\Users\almas\2202\Tutorial 1\phone.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
